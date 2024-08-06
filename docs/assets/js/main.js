@@ -5,10 +5,10 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-import Typed from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.umd.js';
+
 (function() {
   "use strict";
-  
+  import Typed from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js';
   /**
    * Easy selector helper function
    */
