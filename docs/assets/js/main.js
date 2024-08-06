@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-import Typed from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js';
+import {Typed} from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js';
 (function() {
   "use strict";
   
