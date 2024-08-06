@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-import {Typed} from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js';
+
 (function() {
   "use strict";
   
@@ -199,7 +199,7 @@ import {Typed} from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/do
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    
+    const Typed  = require('C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js')
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
