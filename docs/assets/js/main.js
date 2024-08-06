@@ -5,6 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+import Typed from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.umd.js';
 (function() {
   "use strict";
 
@@ -193,11 +194,13 @@
   /**
    * Intro type effect
    */
+
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    new typed('.typed', {
+    
+    new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
