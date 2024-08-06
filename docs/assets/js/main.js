@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+import {Typed} from 'C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js';
 (function() {
   "use strict";
   
@@ -194,18 +194,19 @@
   /**
    * Intro type effect
    */
-
+  
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    const Typed  = require('C:/Users/c5517/OneDrive/Desktop/github/snuphya.github.io/docs/assets/vendor/typed.js/typed.module.js')
+    
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 2000,
+      type: 'module'
     });
   }
 
