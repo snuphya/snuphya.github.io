@@ -100,7 +100,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #3d3f41;
 }
 
 .overlay-mf {
@@ -193,7 +193,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #000000;
   width: 100px;
   bottom: -12px;
 }
@@ -263,7 +263,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: #000000;
   margin-right: 10px;
 }
 
@@ -796,6 +796,9 @@ a:hover {
   .navbar ul {
     display: none;
   }
+  .navbar.scroll ul {
+    display: none;
+  }
 }
 
 .navbar-mobile {
@@ -805,7 +808,7 @@ a:hover {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(78, 78, 78, 0.9);
+  background: rgba(78, 77, 77, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -816,6 +819,11 @@ a:hover {
   right: 15px;
 }
 
+.navbar-mobile .mobile-nav-toggle.scroll {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 .navbar-mobile ul {
   display: block;
   position: absolute;
@@ -891,11 +899,109 @@ a:hover {
   display: block;
 }
 
+/*---temp---*/
+.navbar-mobile.scroll {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(78, 77, 77, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile.scroll .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile.scroll .mobile-nav-toggle.scroll {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile.scroll ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile.scroll>ul>li {
+  padding: 0;
+}
+
+.navbar-mobile.scroll a:hover:before,
+.navbar-mobile.scroll li:hover>a:before,
+.navbar-mobile.scroll .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile.scroll a,
+.navbar-mobile.scroll a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #686565;
+}
+
+.navbar-mobile.scroll a:hover,
+.navbar-mobile.scroll .active,
+.navbar-mobile.scroll li:hover>a {
+  color: #000000;
+}
+
+.navbar-mobile.scroll .getstarted,
+.navbar-mobile.scroll .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile.scroll .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile.scroll .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile.scroll .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile.scroll .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile.scroll .dropdown ul a:hover,
+.navbar-mobile.scroll .dropdown ul .active:hover,
+.navbar-mobile.scroll .dropdown ul li:hover>a {
+  color: #0078ff;
+}
+
+.navbar-mobile.scroll .dropdown>.dropdown-active {
+  display: block;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  height: 50vh;
+  height: 100vh;
   position: relative;
   color: #fff;
 }
@@ -1140,12 +1246,12 @@ a:hover {
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: #000000;
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: #000000;
 }
 
 .work-content .w-like .num-like {
@@ -1160,7 +1266,7 @@ a:hover {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1185,7 +1291,8 @@ a:hover {
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
+  margin-top: 50px;
+  padding: 20px;
   box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
 }
 
@@ -1208,9 +1315,24 @@ a:hover {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
+.portfolio-details .work-description {
+  padding-top: 10px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #ffffff;
+}
+.portfolio-details .work-description-p {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
@@ -1356,7 +1478,7 @@ a:hover {
 
 .php-email-form input:focus,
 .php-email-form textarea:focus {
-  border-color: #0078ff;
+  border-color: #ffffff;
 }
 
 .php-email-form input {
@@ -1369,7 +1491,7 @@ a:hover {
 }
 
 .php-email-form button[type=submit] {
-  background: #0078ff;
+  background: #000000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1612,7 +1734,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #000000;
 }
 
 footer .copyright {

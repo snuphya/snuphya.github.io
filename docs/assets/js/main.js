@@ -5,10 +5,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-import {Typed} from '../vendor/typed.js/typed.module.js';
 (function() {
   "use strict";
-  
+
   /**
    * Easy selector helper function
    */
@@ -152,6 +151,12 @@ import {Typed} from '../vendor/typed.js/typed.module.js';
     this.classList.toggle('bi-x')
   })
 
+  on('click', '.mobile-nav-toggle.scroll', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile.scroll')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
+
   /**
    * Mobile nav dropdowns activate
    */
@@ -161,7 +166,12 @@ import {Typed} from '../vendor/typed.js/typed.module.js';
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
-
+  on('click', '.navbar.scroll .dropdown > a', function(e) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      e.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  }, true)
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -194,19 +204,16 @@ import {Typed} from '../vendor/typed.js/typed.module.js';
   /**
    * Intro type effect
    */
-  
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000,
-      type: 'module'
+      backDelay: 2000
     });
   }
 
