@@ -1182,7 +1182,7 @@ a:hover {
 
 .bg-no-crop {/*-- added by Jaewon Jung*/
   /* Set the width and height to auto to maintain the aspect ratio */
-  width: auto;
+  width: 100%;
   height: auto;
   /* Maximum size constraints to ensure it fits within its container */
   max-width: 100%;
