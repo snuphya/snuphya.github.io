@@ -238,6 +238,7 @@ a:hover {
   transition: all 500ms ease;
 }
 
+
 .socials .ico-circle:hover {
   background-color: #0078ff;
   color: #fff;
@@ -1176,6 +1177,20 @@ a:hover {
 .bg-crop{/*-- added by Jonginn Yun*/
   height: 150px;
   width: 150px;
+  border-radius: 4%;
+}
+
+.bg-no-crop {/*-- added by Jaewon Jung*/
+  /* Set the width and height to auto to maintain the aspect ratio */
+  width: auto;
+  height: auto;
+  /* Maximum size constraints to ensure it fits within its container */
+  max-width: 100%;
+  max-height: 100%;
+  /* Center the image within its container */
+  display: block;
+  margin: 0 auto;
+  /* Optional: Add a border-radius if needed */
   border-radius: 4%;
 }
 /*--------------------------------------------------------------
