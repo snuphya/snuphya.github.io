@@ -648,7 +648,12 @@ a:hover {
     left: -100%;
   }
 }
-
+@media (max-width: 767px) {
+  .ico-square {
+    height: 150px; /* Smaller height for small screens */
+    width: 250px; /* Smaller width for small screens */
+  }
+}
 /**
 * scrolled Navbar
 */
