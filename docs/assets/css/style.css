@@ -281,6 +281,18 @@ a:hover {
   display: block;
 }
 
+.ico-square {/*-- added by Jaewon Jung*/
+  height: 200px;
+  width: 320px;
+  font-size: 2rem;
+  border-radius: 4%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 6px #000000;
+  display: block;
+}
+
 /*------/ Owl Carousel /------*/
 .owl-theme .owl-dots {
   text-align: center;
