@@ -1202,17 +1202,15 @@ a:hover {
 
 .bg-no-crop {/*-- added by Jaewon Jung*/
   /* Set the width and height to auto to maintain the aspect ratio */
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   /* Maximum size constraints to ensure it fits within its container */
-  max-width: 100%;
-  max-height: 100%;
   /* Center the image within its container */
   display: flex;
   margin: 0 auto;
   /* Optional: Add a border-radius if needed */
   border-radius: 4%;
-  object-fit: cover;
+  object-fit: contain;
 }
 /*--------------------------------------------------------------
 # Counter
@@ -1556,12 +1554,7 @@ a:hover {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 767px) {
-  .bg-no-crop {
-    /* Adjust max-width and max-height for smaller screens if needed */
-    max-width: 100%;
-    max-height: 100%;
-  }
+
 .card-blog .card-body {
   position: relative;
 }
