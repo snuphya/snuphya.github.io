@@ -648,10 +648,11 @@ a:hover {
     left: -100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .ico-square {
-    height: 150px; /* Smaller height for small screens */
-    width: 250px; /* Smaller width for small screens */
+    width: 100%; /* Make the width responsive to the screen size */
+    height: auto; /* Adjust height automatically based on the width */
+    padding: 10px; /* Add some padding to maintain visual balance */
   }
 }
 /**
