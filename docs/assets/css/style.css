@@ -30,7 +30,13 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #52ff02;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.files {
+  color: blue; /* Default color when not hovered */
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }

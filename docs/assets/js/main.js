@@ -64,20 +64,37 @@
   /**
    * Scrolls to an element with header offset
    */
+  // const scrollto = (el) => {
+  //   let header = select('#header')
+  //   let offset = header.offsetHeight
+
+  //   if (!header.classList.contains('header-scrolled')) {
+  //     offset -= 16
+  //   }
+
+  //   let elementPos = select(el).offsetTop
+  //   window.scrollTo({
+  //     top: elementPos - offset,
+  //     behavior: 'smooth'
+  //   })
+  // }
+
+
   const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
+    const header = select('#header');
+    let offset = header.offsetHeight;
+  
     if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
+      offset -= 20; // Adjust this value if there's still an offset issue
     }
-
-    let elementPos = select(el).offsetTop
+  
+    const elementPos = select(el).offsetTop;
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'
-    })
+    });
   }
+
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
