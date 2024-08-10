@@ -282,15 +282,17 @@ a:hover {
 }
 
 .ico-square {/*-- added by Jaewon Jung*/
-  height: 200px;
-  width: 320px;
+  height: 220px;
+  width: 380px;
   font-size: 2rem;
   border-radius: 4%;
   line-height: 1.55;
   margin: 0 auto;
+  display: flex;
   text-align: center;
   box-shadow: 0 0 0 6px #000000;
-  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 /*------/ Owl Carousel /------*/
@@ -1200,7 +1202,7 @@ a:hover {
   max-width: 100%;
   max-height: 100%;
   /* Center the image within its container */
-  display: block;
+  display: flex;
   margin: 0 auto;
   /* Optional: Add a border-radius if needed */
   border-radius: 4%;
