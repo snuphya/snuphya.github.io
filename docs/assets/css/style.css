@@ -244,6 +244,27 @@ a:hover {
   transition: all 500ms ease;
 }
 
+.socials .ico-square {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: all 500ms ease;
+}
+
+.socials .ico-square2 {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: all 500ms ease;
+}
 
 .socials .ico-circle:hover {
   background-color: #0078ff;
@@ -288,8 +309,22 @@ a:hover {
 }
 
 .ico-square {/*-- added by Jaewon Jung*/
-  height: 220px;
-  width: 380px;
+  height: 300px;
+  width: 300px;
+  font-size: 2rem;
+  border-radius: 4%;
+  line-height: 1.55;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 0 6px #000000;
+  align-items: center;
+  justify-content: center;
+}
+
+.ico-square2 {/*-- added by Jaewon Jung*/
+  height: 330px;
+  width: 330px;
   font-size: 2rem;
   border-radius: 4%;
   line-height: 1.55;
@@ -655,6 +690,15 @@ a:hover {
     padding: 10px; /* Add some padding to maintain visual balance */
   }
 }
+
+@media (max-width: 480px) {
+  .ico-square2 {
+    width: 100%; /* Make the width responsive to the screen size */
+    height: auto; /* Adjust height automatically based on the width */
+    padding: 10px; /* Add some padding to maintain visual balance */
+  }
+}
+
 /**
 * scrolled Navbar
 */
@@ -1171,6 +1215,19 @@ a:hover {
   background-color: #000000;
   box-shadow: 0 0 0 6px #b3b909;
 }
+.service-box:hover .ico-square {
+  transition: all 500ms ease;
+  color: #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 6px #b3b909;
+}
+
+.service-box:hover .ico-square2 {
+  transition: all 500ms ease;
+  color: #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 6px #b3b909;
+}
 
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -1213,8 +1270,8 @@ a:hover {
   /* Maximum size constraints to ensure it fits within its container */
   /* Center the image within its container */
   display: flex;
-  margin: 0 auto;
-  /* Optional: Add a border-radius if needed */
+  margin: 0 auto; */
+  /* /* Optional: Add a border-radius if needed */
   border-radius: 4%;
   object-fit: contain;
 }
@@ -1237,6 +1294,20 @@ a:hover {
 }
 
 .counter-ico .ico-circle {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.counter-ico .ico-square {
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.counter-ico .ico-square2 {
   height: 60px;
   width: 60px;
   line-height: 1.5;
