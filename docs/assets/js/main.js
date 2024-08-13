@@ -42,7 +42,7 @@
   }
 
 /**
- * Site update
+ * Site update added by Jung, Jaewon
  */
 document.addEventListener('DOMContentLoaded', function() {
   const sections = document.querySelectorAll('section');
