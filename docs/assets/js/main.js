@@ -41,6 +41,52 @@
     el.addEventListener('scroll', listener)
   }
 
+/**
+ * Site update
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section');
+  const menuLinks = document.querySelectorAll('#navbar .scrollto');
+
+  function changeHashOnScroll() {
+    let scrollPosition = window.scrollY;
+    
+    sections.forEach(section => {
+      if (section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition) {
+        history.replaceState(null, null, '#' + section.id);
+        
+        // Update Google Analytics / Tag Manager
+        gtag('config', 'G-CLVQSER21V', {'page_path': location.pathname + location.hash});
+      }
+    });
+  }
+
+  window.addEventListener('scroll', changeHashOnScroll);
+
+  // Handling clicks on navigation to update URL hash
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      let hash = this.hash;
+      let target = document.querySelector(hash);
+      if (target) {
+        event.preventDefault();
+        // Smooth scroll to section
+        window.scrollTo({
+          'behavior': 'smooth',
+          'top': target.offsetTop
+        });
+        // Update the URL hash
+        history.pushState(null, null, hash);
+        // Manually trigger a hash change for Google Analytics
+        gtag('config', 'G-CLVQSER21V', {'page_path': location.pathname + location.hash});
+      }
+    });
+  });
+});
+
+
+
   /**
    * Navbar links active state on scroll
    */
