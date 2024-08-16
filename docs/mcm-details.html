@@ -37,16 +37,17 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Jonginn Yun</a></h1>
+      <h1 class="logo"><a href="index.html">Jaewon Jung</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href=index.html>Home</a></li>
-          <li><a class="nav-link scrollto" href=index.html#about>CV</a></li>
-          <li><a class="nav-link scrollto" href=index.html#services>Technical Skills</a></li>
-          <li><a class="nav-link scrollto " href=index.html#work>Research Projects</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#skills">Expertise and Skills</a></li>
+          <li><a class="nav-link scrollto " href="index.html#projects">Research Projects</a></li>
+          <li><a class="nav-link scrollto " href="index.html#ALT">Awards | Leadership | Teaching</a></li>
           <!--
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -74,17 +75,17 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/fab_port.jpg)">
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/mcm_0.png)">
     <div class="overlay-mf"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Dilution Refrigerator Setup</h2>
+          <h2 class="hero-title mb-4">Benchmarking Mid-circuit Measurements</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="index.html#hero">Home</a>
             </li>
-            <li class="breadcrumb-item active">Dilution Refrigerator Set-up</li>
+            <li class="breadcrumb-item active">Scalable Benchmarking Protocol for Mid-circuit Measurements</li>
           </ol>
         </div>
       </div>
@@ -104,22 +105,22 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/setup-details_0.jpg" alt="">
+                  <img src="assets/img/mcm_1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/setup-details_1.jpg" alt="">
+                  <img src="assets/img/mcm_2.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/setup-details_2.jpg" alt="">
+                  <img src="assets/img/mcm_3.png" alt="">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/setup-details_3.jpg" alt="">
-                </div>
+
 
               </div>
+              <b>Authors</b>: <a href="index.html#about" target="_blanck">Jaewon Jung</a>, Daniel Donghyon Ohm, Minwoo Kim, Jungmo Lee,and <a href="https://physics.snu.ac.kr/en/research-faculty/faculty/fulltime?mode=view&profidx=50" class="blue" target="_blank">Eunjong Kim</a>.<br>
+              <span><b>Contributions</b>: <b><a href="index.html#about" target="_blanck">J. Jung</a></b> developed a benchmarking protocol, ran a hardware and simulation experiments. D. D. Ohm contributed to the development of the protocol. J. Lee and M. Kim helped developing the theory. All authors developed the research based on discussions with E. Kim.
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -131,13 +132,18 @@
             </div>
             -->
             <div id="portfolio-details" class="work-description-p">
-              <h5><b>Semiconductor Quantum Dot Fabrication</b></h5>
+              <h5><b>Benchmarking Mid-circuit Measurements</b></h5>
+              <h3>Scalable Benchmarking Protocol for Mid-circuit Measurements</h3>
               <p>
-                &emsp;Electronic noise affects measuring the physical phenomena of various systems, particularly those regarding the precise measurement of quantum states. For example, the signal originating from a spin qubit within a semiconductor quantum dot device hinges on a small charge difference (a charge quanta in most cases), rendering it highly susceptible to electronic noise. Moreover, electrical line noise can induce decoherence by interacting with the quantum states of the system. In some cases, extremely low temperatures, often in the millikelvin range, are required to mitigate these challenges. Achieving such conditions necessitates the use of dilution refrigerators along with meticulously designed DC and RF lines.
+                ⌜Built a randomized benchmarking (RB) based protocol to <b>characterize</b> and <b>measure</b> the diverse errors of <b>mid-circuit
+measurements</b> using <b>pyGSTi</b> and <b>Qiskit</b>.
+Simulated the protocol with physical errors such as <b>relaxation errors, depolarizing errors, crosstalks, and stark shift
+errors</b> and showed the capability of the protocol both in measuring the error rates and the types of erros of mid-circuit
+measurements and tested on <b>superconducting qubits system</b> using IBM’s real backend.⌟<br><br>
+                &emsp;<b>Mid-circuit measurements</b> are one of the core building blocks for fault-tolerant quantum computing, serving as a key primitive in error correction. With steady progress in scaling the quantum processors, realizing logical qubits is becoming feasible, consequently, the significance of accurate and reliable operation of mid-circuit measurements is also becoming increasingly critical. However, due to the inherent nature of the measurement occurring in the middle of the quantum circuit, it is subject to non-local errors on spectator qubits, unlike terminating measurements that occur at the end of the circuit. Though several techniques have been developed for benchmarking and characterizing mid-circuit measurements, to date reliable, scalable, and efficient protocols capable of capturing the holistic errors of mid-circuit measurements have yet to emerge.
                 <br>
-                &emsp;While commercial dilution refrigerators are readily available, customization of electrical lines is often needed to tailor them to specific physical systems. In our case, we had to customize both RF and DC lines to suppress the decoherence induced by electrical noise and ensure high signal-to-noise ratio (SNR) readouts of qubit states. Throughout the project, my contributions included configuring RF reflectometry setups with attenuators and directional couplers, developing and installing DC filters and bias-tees, and constructing various passive component devices like breakout boxes.
-                <br>
-                &emsp;In addition to customizing the dilution refrigerator, I also participated in selecting and installing various electronic measurement instruments such as the ultrahigh lock-in amplifier (UHFLI), low-noise stable DC voltage source, and arbitrary waveform generator. These measures collectively contributed to achieving the stringent noise suppression required for our experiments.
+                &emsp;Here, we have developed a scalable and efficient benchmarking protocol for <b>mid-circuit measurements based on randomized benchmarking theory</b> along with <b>the consideration of circuit scheduling</b>. We demonstrate that our protocol can quantify and distinguish <b>local measurement errors and measurement-induced errors on unmeasured qubits</b> using a density matrix simulator and superconducting qubits. In particular, we show that <b>the noise levels of the ZZ-interaction</b> can be tuned and the difference in error rates between high and low ZZ-interaction levels can be quantified.
+                
                 </p>
             </div>
           </div>
@@ -149,7 +155,8 @@
 
   </main><!-- End #main -->
 
-  <!-- 
+
+  
   <footer>
     <div class="container">
       <div class="row">
@@ -157,14 +164,13 @@
           <div class="copyright-box">
             <div class="credits">
               
-            Modified by <b>Jonginn Yun</b>. Template provided by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Modified by <b>Jaewon Jung</b>. Template provided by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer> -->
-
+  </footer>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

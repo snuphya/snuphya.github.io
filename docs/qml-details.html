@@ -37,16 +37,17 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Jonginn Yun</a></h1>
+      <h1 class="logo"><a href="index.html">Jaewon Jung</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href=index.html>Home</a></li>
-          <li><a class="nav-link scrollto" href=index.html#about>CV</a></li>
-          <li><a class="nav-link scrollto" href=index.html#services>Technical Skills</a></li>
-          <li><a class="nav-link scrollto " href=index.html#work>Research Projects</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#skills">Expertise and Skills</a></li>
+          <li><a class="nav-link scrollto " href="index.html#projects">Research Projects</a></li>
+          <li><a class="nav-link scrollto " href="index.html#ALT">Awards | Leadership | Teaching</a></li>
           <!--
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -74,17 +75,17 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/fab_port.jpg)">
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/qml_kernel.png)">
     <div class="overlay-mf"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Device Fabrication</h2>
+          <h2 class="hero-title mb-4">Quantum Machine Learning</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
-              <a href="#">Home</a>
+              <a href="index.html#hero">Home</a>
             </li>
-            <li class="breadcrumb-item active">Device Fabrication</li>
+            <li class="breadcrumb-item active">Quantum ensemble learning for classification with various quantum classifiers</li>
           </ol>
         </div>
       </div>
@@ -104,22 +105,49 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/fab_det_1.jpg" alt="">
+                  <img src="assets/img/qml_1.png" alt="">
+                  <p>
+                    <b>Figure 1</b> 
+                    The procedure of quantum ensemble learning.<br>
+  
+                 </p>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/fab_det_2.jpg" alt="">
+                  <img src="assets/img/qml_2.png" alt="">
+                  <p>
+                    <b>Figure 2</b> 
+                    Brief explanation of a quantum support vector machine technique.<br>
+  
+                 </p>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/fab_det_3.jpg" alt="">
+                  <img src="assets/img/qml_3.png" alt="">
+                  <p>
+                    <b>Figure 3</b> 
+                    Brief explanation of a variational quantum classifier technique.<br>
+                 </p>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/fab_det_4.jpg" alt="">
+                  <img src="assets/img/qml_4.png" alt="">
+                  <p>
+                    <b>Figure 4</b> 
+                    Brief explanation of a data-reuploading method.<br>
+                 </p>
                 </div>
-
+                <div class="swiper-slide">
+                  <img src="assets/img/qml_5.png" alt="">
+                  <p>
+                    <b>Figure 5</b> 
+                    Classification results from quantum classifiers and classical algorithms.<br>
+                 </p>
+                </div>
               </div>
+              
+              <b>Participant</b>: <a href="index.html#about" target="_blanck">Jaewon Jung</a> <br>
+              <span><b>Contributions</b>: <b><a href="index.html#about" target="_blanck">J. Jung</a></b> developed models for quantum classifiers, ensemble learning protocols, ran the experiments and analyzed the results. </span>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -127,30 +155,23 @@
           <div class="col-lg-6">
             <!--
             <div class="portfolio-info">
-              <h3>Semiconductor Quantum Dot</h3>
+              <h3>Semicondutor Quantum Dot</h3>
             </div>
             -->
             <div id="portfolio-details" class="work-description-p">
-              <h5><b>Semiconductor Quantum Dot Fabrication</b></h5>
-              <p>
-                &emsp;In a semiconductor quantum dot device, precise control of electron and hole confinement is achieved by applying 
-                voltages to metallic gates, forming potential landscapes that confine and concomitantly define the energy levels used for qubits. 
-                These metallic gates, or "<i>nanogates</i>," must match the nanometer-scale dimensions of the confined particles. 
-                To meet this exacting size requirement, the utilization of an electron-beam (E-beam) lithography system becomes 
-                imperative. E-beam ligthography guarantees the creation of nanometer-sized pitches for these metallic gates, 
-                ensuring their alignment with the stringent demands of quantum dot confinement.
+              <h5><b>Quantum Machine Learning</b></h5>
+              <p>                
+                <b><h3>Quantum ensemble learning for classification with various quantum classifiers</h3></b>
+                ⌜Developed <b>quantum classifiers both in kernel-based method and parametrized quantum circuit-based method, quantum
+                support vector machine (QSVM), variational quantum classifier (VQC), and data re-uploading classifier</b>.
+                Using above three quantum classifiers with superconducting qubits and trapped ion qubits, implemented ensemble
+                learning to solve binary classification problems using Torch, Pennylane, and Qiskit and compared with 8 different
+                classical algorithms.⌟ <br><br>
+                &emsp;<b>Supervised learning</b>, a machine learning technique that utilizes input data paired with labels, has traditionally been explored using classical algorithms. However, with advancements in quantum computing, new quantum algorithms have emerged, including quantum support vector machines, variational quantum classifiers, data re-uploading methods, quantum neural networks, and quantum generative adversarial networks.
                 <br>
-                &emsp;The fabrication of a semiconductor quantum dot device involves several key steps. 
-                It begins with etching a mesa and establishing an Ohmic contact. Next, a series of alignment markers are patterned, 
-                and nanogates are meticulously deposited before being covered with oxide layers. The process ends with the deposition 
-                of bonding pads.
-                <br>
-                &emsp;A range of specialized equipment is essential to accomplish this intricate fabrication. 
-                This includes an <b>E-beam lithography system, a photolithography system, an electron-beam evaporator, 
-                  a reactive ion etcher (RIE), an atomic layer deposition system (ALD), a rapid thermal annealing system (RTA), 
-                  and various characterization tools like atomic force microscopes (AFM) and scanning electron microscopes (SEM)</b>. 
-                  Additionally, <b>wet-etching and cleaning techniques</b> are employed to ensure precision and cleanliness 
-                  throughout the process.
+                &emsp;I developed quantum classifiers using both kernel-based methods and parameterized quantum circuits, including <b>quantum support vector machines (QSVM), variational quantum classifiers (VQC), and data re-uploading classifiers</b>. By implementing these quantum classifiers on <b>superconducting qubits and trapped ion qubits</b> based simulators, I applied ensemble learning to address binary classification problems using <b>Torch, Pennylane, and Qiskit</b> and compared their performance against eight different classical algorithms. For QSVM and VQC, I focused on optimizing the feature map and parameterized encoding circuits, while for the data re-uploading technique, I enhanced the efficiency of encoding methods using virtual Z gates and devised a compact encoding scheme.
+                
+           
                 </p>
             </div>
           </div>
@@ -162,8 +183,7 @@
 
   </main><!-- End #main -->
 
-
-  <!-- 
+  
   <footer>
     <div class="container">
       <div class="row">
@@ -171,13 +191,14 @@
           <div class="copyright-box">
             <div class="credits">
               
-            Modified by <b>Jonginn Yun</b>. Template provided by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Modified by <b>Jaewon Jung</b>. Template provided by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
+
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
