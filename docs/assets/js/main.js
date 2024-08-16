@@ -265,6 +265,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+/** */
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Create the circle element
+//   const heroCircle = document.createElement('div');
+//   heroCircle.classList.add('hero-circle');
+//   document.getElementById('hero').appendChild(heroCircle);
+
+//   // Update the circle's position based on mouse movement
+//   document.getElementById('hero').addEventListener('mousemove', (e) => {
+//     const hero = e.currentTarget.getBoundingClientRect();
+//     const x = e.clientX - hero.left;
+//     const y = e.clientY - hero.top;
+
+//     heroCircle.style.left = `${x}px`;
+//     heroCircle.style.top = `${y}px`;
+//   });
+// });
+
+
+/**/
   /**
    * Intro type effect
    */
