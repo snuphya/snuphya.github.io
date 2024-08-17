@@ -1298,7 +1298,7 @@ a:hover {
   /* Maximum size constraints to ensure it fits within its container */
   /* Center the image within its container */
   display: flex;
-  margin: 0 auto; */
+  margin: 0 auto; 
   /* /* Optional: Add a border-radius if needed */
   border-radius: 4%;
   object-fit: contain;
