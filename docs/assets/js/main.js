@@ -307,6 +307,89 @@ document.addEventListener('DOMContentLoaded', function() {
   /**
    * Portfolio details slider
    */
+
+  // Initialize Swiper for each competition's image slider
+// Initialize the Inner Swiper for images (with auto-replay enabled)
+document.querySelectorAll('.inner-swiper').forEach((slider) => {
+  new Swiper(slider, {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: slider.querySelector('.swiper-pagination'),
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: slider.querySelector('.swiper-button-next'),
+      prevEl: slider.querySelector('.swiper-button-prev')
+    }
+  });
+});
+
+// Initialize the Outer Swiper for sections (without auto-replay)
+// Ensure that the DOM is fully loaded before initializing Swipers
+document.addEventListener('DOMContentLoaded', function() {
+  
+  // Initialize the Inner Swiper for images (with auto-replay enabled)
+  document.querySelectorAll('.inner-swiper').forEach((slider) => {
+    const innerSwiper = new Swiper(slider, {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: slider.querySelector('.swiper-pagination'),
+        type: 'bullets',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: slider.querySelector('.swiper-button-next'),
+        prevEl: slider.querySelector('.swiper-button-prev')
+      }
+    });
+
+    // Handle touch events explicitly for the inner swiper
+    slider.addEventListener('touchstart', function(e) {
+      e.stopImmediatePropagation();
+    }, { capture: true, passive: false });
+
+    slider.addEventListener('touchmove', function(e) {
+      e.stopImmediatePropagation();
+    }, { capture: true, passive: false });
+
+    slider.addEventListener('touchend', function(e) {
+      e.stopImmediatePropagation();
+    }, { capture: true, passive: false });
+  });
+
+  // Initialize the Outer Swiper for sections (disable swipe interaction, allow arrows)
+  new Swiper('.outer-swiper', {
+    speed: 600,
+    loop: true,
+    autoplay: false, // No autoplay for the outer swiper
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.outer-next',
+      prevEl: '.outer-prev',
+    },
+    allowTouchMove: false, // Disable touch swiping for outer Swiper
+  });
+});
+
+// inner outer swipe
+
+
+
   new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,

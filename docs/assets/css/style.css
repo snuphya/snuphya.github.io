@@ -1482,6 +1482,29 @@ a:hover {
   padding: 0;
 }
 
+/**//**//**//**//**//**//**//**//**/
+/* Position the inner Swiper navigation arrows at the bottom */
+.inner-swiper .swiper-button-next,
+.inner-swiper .swiper-button-prev {
+  position: absolute;
+  bottom: 10px; /* Adjust as necessary */
+  width: auto;
+  height: auto;
+  z-index: 10; /* Ensure they are above other content */
+}
+
+/* Ensure that the outer Swiper arrows stay in their original position */
+.outer-swiper .swiper-button-next,
+.outer-swiper .swiper-button-prev {
+  top: 50%; /* Default positioning, centered vertically */
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+}
+
+
+/**//**//**//**//**//**//**//**//**/
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
