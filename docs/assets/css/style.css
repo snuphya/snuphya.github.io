@@ -138,7 +138,15 @@ a:hover {
 
 /* Hero section specific styles */
 
-/*
+.project-period {
+  float: right;  /* Aligns the text to the right */
+  font-style: italic;  /* Keeps the italic style */
+  font-size: 0.8em;  /* Smaller font size */
+  position: relative;  /* Allows for relative positioning */
+  bottom: -3px;  /* Adjust this value to align at the bottom of the title */
+  line-height: 1;  /* Adjust line height to fit the title's height */
+}
+
 
 
 /*--/ Sections /--*/
